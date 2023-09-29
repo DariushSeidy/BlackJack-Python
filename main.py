@@ -83,7 +83,7 @@ def blackjack_game():
         # Dealer's turn
         while (player_did_not_lose and
                (calculate_score(dealer_hand) < 17 or
-                calculate_score(dealer_hand) < calculate_score(player_hand))):
+                calculate_score(dealer_hand) <= calculate_score(player_hand))):
             pick_card(deck, dealer_hand)
             if (calculate_score(dealer_hand) > 21 or
                     calculate_score(dealer_hand) == calculate_score(player_hand) == 21):
@@ -98,6 +98,7 @@ def blackjack_game():
 
         display_status("your", player_hand)
         display_status("dealer", dealer_hand)
+        print("___________________________")
 
 
 if __name__ == "__main__":
