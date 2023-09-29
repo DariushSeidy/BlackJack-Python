@@ -1,6 +1,7 @@
 # Blackjack Game
 
-This is a simple command-line Blackjack game implemented in Python. The game allows you to play Blackjack against a dealer.
+This is a simple command-line Blackjack game implemented in Python. The game allows you to play Blackjack against a dealer.<br/>
+#100DaysOfCode
 
 ## Features
 
